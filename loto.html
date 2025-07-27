@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электронное Лото</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <table id="lottoTable">
+            <!-- Таблица будет заполнена через JavaScript -->
+        </table>
+        <button onclick="drawNumber()">Вытянуть число</button>
+        <button onclick="toggleMode()">Переключить режим</button>
+        <p id="drawnNumber"></p>
+        <div id="drop-area">
+            Перетащите сюда свои документы
+        </div>
+        <p></p>
+        <button onclick="clearLocalStorage()">Очистить локальное хранилище</button>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal" style="display:none;">
+        <span id="close-modal">&times;</span>
+        <div id="modal-content" class="modal-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
